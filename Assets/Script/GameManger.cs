@@ -12,7 +12,7 @@ public class GameManger : MonoBehaviour {
 
 	public Rocket player;
 	private Vector3 PlayerSpownPoint;
-
+	private ScoreManger Scoremangment;
 	private PlatformDestroyer[] platformslist;
 
 	// Use this for initialization
@@ -20,6 +20,7 @@ public class GameManger : MonoBehaviour {
 		PlatformGenratorSpownPoint = PlatformGenrator.position;
 		PlayerSpownPoint = player.transform.position;
 		CameraSpownPoint = Camera.position;
+		Scoremangment = FindObjectOfType<ScoreManger > ();
 	}
 	
 	// Update is called once per frame
@@ -34,7 +35,7 @@ public class GameManger : MonoBehaviour {
 	}
 
 	public IEnumerator RestartGameCo(){
-
+		Scoremangment.ScoreIncreaseing = false;
 		player.gameObject.SetActive (false);
 		yield return new WaitForSeconds (0.5f);
 		platformslist = FindObjectsOfType <PlatformDestroyer> ();
@@ -50,7 +51,7 @@ public class GameManger : MonoBehaviour {
 		player.MoveSpeed = 8f;
 		player.JumpSpeed = 10f; 
 		player.gameObject.SetActive (true);
-
+		Scoremangment.ScoreCounter = 0;
 
 
 	}

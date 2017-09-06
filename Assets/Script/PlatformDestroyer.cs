@@ -8,7 +8,7 @@ public class PlatformDestroyer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		PlatformDestractionPoint = GameObject.Find ("PlatformDestactionPoint");
+		PlatformDestractionPoint = GameObject.Find ("PlatformDestractionPoint");
 	}
 	
 	// Update is called once per frame
