@@ -8,6 +8,7 @@ TagManager:
   - Plyer
   - Spike
   - Saw
+  - Coin
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Ground
+  - Player
   - 
   - 
   - 

@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class PlatformGenrator : MonoBehaviour {
 
-	//public GameObject[] Platforms;
 	public Transform GenrationPoint;
-	public float distancebetween;
+
 	public ObjectPooler[] objectpools;
-
 	private int PlatformSelector;
-	public float[] PlatformsWidths;
+	private float[] PlatformsWidths;
+	private  int distancebetween;
 
+	const  int distancebetweenMax = 3;
+	const  int distancebetweenMin = 6;
 
 	// Use this for initialization
 	void Start () {
@@ -26,20 +27,19 @@ public class PlatformGenrator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		distancebetween = Random.Range (3, 6);
+		distancebetween = Random.Range(distancebetweenMin, distancebetweenMax);
 
 		if (transform.position.x < GenrationPoint.position.x) {
-			transform.position = new Vector3 (transform.position.x + (PlatformsWidths[PlatformSelector] / 2 ) + distancebetween ,  transform.position.y, transform.position.z);
+			transform.position = new Vector3 (transform.position.x + (PlatformsWidths[PlatformSelector] / 2 ) + distancebetween ,  transform.position.y, 0f);
 
 			PlatformSelector = Random.Range (0, objectpools.Length);
 
-			//Instantiate (Platforms[PlatformSelector], transform.position, transform.rotation);
 
 			GameObject NewPlatform = objectpools[PlatformSelector].GetPooledObjects ();
 			NewPlatform.transform.position = new Vector3 (transform.position.x, transform.position.y, 0f);
 			NewPlatform.transform.rotation = transform.rotation;
 			NewPlatform.SetActive (true);
-			transform.position = new Vector3 (transform.position.x + (PlatformsWidths[PlatformSelector] / 2 )  ,  transform.position.y, transform.position.x);
+			transform.position = new Vector3 (transform.position.x + (PlatformsWidths[PlatformSelector] / 2 )  ,  transform.position.y, 0f);
 
 		}
 	}

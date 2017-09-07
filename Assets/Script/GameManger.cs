@@ -5,15 +5,14 @@ using UnityEngine;
 public class GameManger : MonoBehaviour {
 
 	public Transform PlatformGenrator;
-	private Vector3 PlatformGenratorSpownPoint;
 	public Transform Camera;
-	private Vector3 CameraSpownPoint;
+	public PlayerController player;
 
-
-	public Rocket player;
 	private Vector3 PlayerSpownPoint;
 	private ScoreManger Scoremangment;
 	private PlatformDestroyer[] platformslist;
+	private Vector3 PlatformGenratorSpownPoint;
+	private Vector3 CameraSpownPoint;
 
 	// Use this for initialization
 	void Start () {
@@ -23,10 +22,7 @@ public class GameManger : MonoBehaviour {
 		Scoremangment = FindObjectOfType<ScoreManger > ();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 
 	public void RestartGame(){
 
@@ -52,6 +48,7 @@ public class GameManger : MonoBehaviour {
 		player.JumpSpeed = 10f; 
 		player.gameObject.SetActive (true);
 		Scoremangment.ScoreCounter = 0;
+		Scoremangment.ScoreIncreaseing = true;
 
 
 	}

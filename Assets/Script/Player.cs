@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
-	public bool IsGrounded;
+	//public bool IsGrounded;
 	public GameManger GameMangment;
-	public Rocket PlayerControler;
+	//public PlayerController PlayerControler;
 
-	void OnCollisionEenter2D(Collision2D other){
+	/*void OnCollisionEenter2D(Collision2D other){
 		if (other.collider.tag == "Ground") {
 			IsGrounded = true;
 		}
@@ -26,7 +26,7 @@ public class Player : MonoBehaviour {
 		if (other.collider.tag == "Ground") {
 			IsGrounded = false;
 		}
-	}
+	}*/
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Spike") {
@@ -34,11 +34,11 @@ public class Player : MonoBehaviour {
 		
 		}
 
-		if (other.tag == "Saw") {
-			PlayerControler.JumpSpeed = 8f;
+		//if (other.tag == "Saw") {
+		//	PlayerControler.JumpSpeed = 8f;
 
 
-		}
+		//}
 	}
 }
 

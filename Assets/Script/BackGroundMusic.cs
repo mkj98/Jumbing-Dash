@@ -12,11 +12,10 @@ public class BackGroundMusic : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (Music.pitch < 1.6) {
 
 			Music.pitch += 0.0001f * (Time.deltaTime);
 		}
-		Debug.Log (Music.pitch);
 	}
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformDestroyer : MonoBehaviour {
 
-	public GameObject  PlatformDestractionPoint;
+	private GameObject  PlatformDestractionPoint;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +15,6 @@ public class PlatformDestroyer : MonoBehaviour {
 	void FixedUpdate () {
 		if (transform.position.x < PlatformDestractionPoint.transform.position.x) {
 
-			//Destroy (gameObject);
 
 			gameObject.SetActive (false);
 
