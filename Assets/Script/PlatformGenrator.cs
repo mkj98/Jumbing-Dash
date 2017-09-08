@@ -5,17 +5,19 @@ using UnityEngine;
 public class PlatformGenrator : MonoBehaviour {
 
 	public Transform GenrationPoint;
-
 	public ObjectPooler[] objectpools;
+	public int CoinHold;
 	private int PlatformSelector;
 	private float[] PlatformsWidths;
 	private  int distancebetween;
-
+	private CoinGenrator CoinGenrator;
+	private int CoinHoldRandomizer;
 	const  int distancebetweenMax = 3;
 	const  int distancebetweenMin = 6;
 
 	// Use this for initialization
 	void Start () {
+		CoinGenrator = FindObjectOfType<CoinGenrator > ();
 		PlatformsWidths = new float[objectpools.Length];
 		for ( int i = 0; i < objectpools.Length; i++) {
 
@@ -39,8 +41,16 @@ public class PlatformGenrator : MonoBehaviour {
 			NewPlatform.transform.position = new Vector3 (transform.position.x, transform.position.y, 0f);
 			NewPlatform.transform.rotation = transform.rotation;
 			NewPlatform.SetActive (true);
-			transform.position = new Vector3 (transform.position.x + (PlatformsWidths[PlatformSelector] / 2 )  ,  transform.position.y, 0f);
+			CoinHoldRandomizer = Random.Range (0, 100);
 
+			if (CoinHoldRandomizer < CoinHold) {
+				
+				CoinGenrator.SpawnCoins (new Vector3 (transform.position.x, transform.position.y + 1f, transform.position.z));
+
+			}
+
+			transform.position = new Vector3 (transform.position.x + (PlatformsWidths[PlatformSelector] / 2 )  ,  transform.position.y, 0f);
+		
 		}
 	}
 }

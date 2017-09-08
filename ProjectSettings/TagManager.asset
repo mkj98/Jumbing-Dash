@@ -9,6 +9,7 @@ TagManager:
   - Spike
   - Saw
   - Coin
+  - Danger
   layers:
   - Default
   - TransparentFX

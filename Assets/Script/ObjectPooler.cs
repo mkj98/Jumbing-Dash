@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectPooler : MonoBehaviour {
 	public GameObject PooledObject;
-	const int PooledAmount = 2;
+	public int PooledAmount;
 
 	List<GameObject> pooledObjects; 
 
