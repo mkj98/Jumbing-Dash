@@ -1,10 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\PauseMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManger.cs">
     <Files>
-      <File FileName="Assets\Script\GameManger.cs" Line="88" Column="40" />
-      <File FileName="Assets\Script\DeathMenu.cs" Line="21" Column="1" />
-      <File FileName="Assets\Script\PauseMenu.cs" Line="17" Column="2" />
+      <File FileName="Assets\Scripts\GameManger.cs" Line="111" Column="23" />
+      <File FileName="Assets\Scripts\Coin.cs" Line="16" Column="31" />
+      <File FileName="Assets\Scripts\BackGroundMusic.cs" Line="18" Column="25" />
+      <File FileName="Assets\Scripts\PlatformGenrator.cs" Line="15" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

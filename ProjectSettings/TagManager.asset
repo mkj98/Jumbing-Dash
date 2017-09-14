@@ -21,7 +21,7 @@ TagManager:
   - 
   - Ground
   - Player
-  - 
+  - Background
   - 
   - 
   - 
@@ -44,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3347055689
+    locked: 0
   - name: Saw
     uniqueID: 3090034227
     locked: 0
