@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scence/Endless.unity
     guid: 0a207509414ecf74595dff06ee15add5
+  - enabled: 1
+    path: Assets/Scence/CharcterCustmizor.unity
+    guid: 4d729ef68683284419b2d9d433fdcb6d

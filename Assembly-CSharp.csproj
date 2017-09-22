@@ -54,18 +54,22 @@
      <Compile Include="Assets\Scripts\AnimManger.cs" />
      <Compile Include="Assets\Scripts\BackGroundMusic.cs" />
      <Compile Include="Assets\Scripts\CameraControler.cs" />
+     <Compile Include="Assets\Scripts\CharcterScript.cs" />
      <Compile Include="Assets\Scripts\Coin.cs" />
      <Compile Include="Assets\Scripts\CoinGenrator.cs" />
      <Compile Include="Assets\Scripts\Dm_timer.cs" />
      <Compile Include="Assets\Scripts\GameManger.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\ObjectPooler.cs" />
+     <Compile Include="Assets\Scripts\ParamaterPasser.cs" />
      <Compile Include="Assets\Scripts\PlatformDestroyer.cs" />
      <Compile Include="Assets\Scripts\PlatformGenrator.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerTriger.cs" />
+     <Compile Include="Assets\Scripts\Randommusic.cs" />
      <Compile Include="Assets\Scripts\SceneLoader.cs" />
      <Compile Include="Assets\Scripts\ScoreManger.cs" />
+     <Compile Include="Assets\Scripts\SEtingsButton.cs" />
      <Compile Include="Assets\Scripts\UiManger.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark01_UGUI.cs" />
@@ -120,9 +124,6 @@
      <None Include="Assets\TextMesh Pro\Fonts\Bangers - OFL.txt" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>F:/Projects/Unity/JumbingDash/Jumbing Dash/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

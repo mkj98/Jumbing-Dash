@@ -9,6 +9,7 @@ public class UiManger : MonoBehaviour {
 	public GameObject PauseButton;
 	public Text Dm_TimerText;
 	public GameObject  Dm_RestartButton;
+	public int ChosenCharcter;
 	private GameManger gamemangment;
 	private PlayerController Player;
 	private ScoreManger scoremanger;
@@ -45,6 +46,10 @@ public class UiManger : MonoBehaviour {
 		gamemangment.Resume ();
 
 	}
-
+    public void ApplyCharcter(){
+		PlayerPrefs.SetInt ("ChosenSkin", ChosenCharcter);
+		//Player.MySprite = PlayerSkins[ChosenCharcter];
+		Debug.Log(ChosenCharcter);
+	}
 
 }

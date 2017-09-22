@@ -1,11 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManger.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlatformGenrator.cs">
     <Files>
-      <File FileName="Assets\Scripts\GameManger.cs" Line="111" Column="23" />
-      <File FileName="Assets\Scripts\Coin.cs" Line="16" Column="31" />
-      <File FileName="Assets\Scripts\BackGroundMusic.cs" Line="18" Column="25" />
-      <File FileName="Assets\Scripts\PlatformGenrator.cs" Line="15" Column="35" />
+      <File FileName="Assets\Scripts\GameManger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Coin.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BackGroundMusic.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlatformGenrator.cs" Line="8" Column="21" />
+      <File FileName="Assets\Scripts\SEtingsButton.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="7" Column="25" />
+      <File FileName="Assets\Scripts\CharcterScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CameraControler.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

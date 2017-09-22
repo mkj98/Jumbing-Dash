@@ -13,6 +13,7 @@ public class GameManger : MonoBehaviour {
 	public GameObject PauseButton;
 	public Animator myanim;
 	public bool IsPlaying;
+	public AudioSource PlayerDieSfx;
 	public ParticleSystem  PlyerDieParticle;
 	private float Interval;
 	private Vector3 PlayerSpownPoint;
@@ -58,6 +59,7 @@ public class GameManger : MonoBehaviour {
 
 	public IEnumerator PlayerDieco(){
 		Scoremangment.ScoreIncreaseing = false;
+		PlayerDieSfx.Play ();
 		player.gameObject.SetActive (false);
 		Instantiate (PlyerDieParticle, player.transform.position, Scoremangment.transform.rotation);
 		yield return new WaitForSeconds (1f);

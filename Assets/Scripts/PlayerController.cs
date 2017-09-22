@@ -14,13 +14,20 @@ public class PlayerController : MonoBehaviour {
 	private BoxCollider2D BoxCollider;
 	private float Interval;
 	public LayerMask Ground;
+	private SpriteRenderer MySkin;
+	private ParamaterPasser ParamaterPasser;
 
-	// Use this for init ialization
+	public Sprite MySprite;
+	// Use this for initialization
 	void Start () {
+		ParamaterPasser = FindObjectOfType <ParamaterPasser>();
 		mybody = GetComponent<Rigidbody2D > (); 
 		BoxCollider = GetComponent <BoxCollider2D > ();
 		SpeedMileStoneCount = SpeedIncreaceMileStone;
-	
+		MySkin = GetComponent <SpriteRenderer > ();
+		MySkin.sprite = ParamaterPasser.ChosenSkin ;
+        gameObject.SetActive (true);
+	    
 	}
 	
 	// Update is called once per frame
