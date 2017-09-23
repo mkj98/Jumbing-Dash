@@ -3451,10 +3451,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MusicClips:
+  - {fileID: 8300000, guid: 14817ea3d88771049acfe86192c6345b, type: 3}
   - {fileID: 8300000, guid: 007d5f8cabdc6e344bdb3e1f354cc5f0, type: 3}
-  - {fileID: 8300000, guid: dd75afaf6262d44469c1e8ef82b40566, type: 3}
   - {fileID: 8300000, guid: 2926b880e06660b4c970055018159f43, type: 3}
   - {fileID: 8300000, guid: 9cd763859ac95a240a314b71d00ed0e1, type: 3}
+  - {fileID: 8300000, guid: 9d1fb321a3e5fa2449203cb4a02fc0fc, type: 3}
   - {fileID: 8300000, guid: 71e60ea1f210d014197d621317f173ae, type: 3}
   MusicPlayer: {fileID: 1914633898}
 --- !u!1 &1922853301
