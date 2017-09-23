@@ -10,6 +10,7 @@ public class UiManger : MonoBehaviour {
 	public Text Dm_TimerText;
 	public GameObject  Dm_RestartButton;
 	public int ChosenCharcter;
+	
 	private GameManger gamemangment;
 	private PlayerController Player;
 	private ScoreManger scoremanger;
@@ -19,6 +20,7 @@ public class UiManger : MonoBehaviour {
 		gamemangment = FindObjectOfType <GameManger> ();
 		scoremanger = FindObjectOfType <ScoreManger> ();
 		Dm_timer = FindObjectOfType<Dm_timer> ();
+		
 	}
 	public void WachVideo(){
 
@@ -52,4 +54,5 @@ public class UiManger : MonoBehaviour {
 		Debug.Log(ChosenCharcter);
 	}
 
+	
 }
