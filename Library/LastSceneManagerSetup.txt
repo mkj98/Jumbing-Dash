@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scence/Main Menu.unity
+- path: Assets/Scence/Endless.unity
   isLoaded: 1
   isActive: 1

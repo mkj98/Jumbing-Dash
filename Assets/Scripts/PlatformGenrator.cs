@@ -29,7 +29,7 @@ public class PlatformGenrator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		distancebetween = Random.Range(distancebetweenMin, distancebetweenMax);
+		distancebetween = Mathf.RoundToInt(Random.Range(distancebetweenMin, distancebetweenMax));
 
 		if (transform.position.x < GenrationPoint.position.x) {
 			transform.position = new Vector3 (transform.position.x + (PlatformsWidths[PlatformSelector] / 2 ) + distancebetween ,  transform.position.y, 0f);

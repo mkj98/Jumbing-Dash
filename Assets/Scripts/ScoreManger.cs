@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class ScoreManger : MonoBehaviour {
 
 	public Text ScoreText;
+	public TextMeshProUGUI d_ScoreText;
 	public Text HighScoreText;
+	public TextMeshProUGUI d_HiScoreText;
 	public Text CoinsText;
 	public float ScoreCounter;
 	public float HighScoreCounter;
@@ -42,6 +44,8 @@ public class ScoreManger : MonoBehaviour {
 			PlayerPrefs.SetFloat ("HighScore", HighScoreCounter);
 		}
 		ScoreText.text = "Score: " + Mathf.Round( ScoreCounter);
+		d_ScoreText.text = Mathf.Round(ScoreCounter).ToString();
+		d_HiScoreText.text = Mathf.Round(HighScoreCounter).ToString();
 		HighScoreText.text = "HighScore: " + Mathf.Round (HighScoreCounter);
 	}
 	public void AddScore(int ScoreToAdd){

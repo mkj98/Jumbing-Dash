@@ -6,7 +6,9 @@ public class SceneLoader : MonoBehaviour {
 
 	public void LoadScence(int ScenceBuildindex){
 
-		SceneManager.LoadScene(ScenceBuildindex);
+		SceneManager.LoadSceneAsync(ScenceBuildindex);
 
+
+		
 	}
 }

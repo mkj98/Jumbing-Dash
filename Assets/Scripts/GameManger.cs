@@ -6,6 +6,7 @@ public class GameManger : MonoBehaviour {
 
 	public Transform PlatformGenrator;
 	public Transform Camera;
+	
 	public PlayerController player;
 	public GameObject DeathMenu;
 	public float MoveAhead;
@@ -27,6 +28,7 @@ public class GameManger : MonoBehaviour {
 		PlatformGenratorSpownPoint = PlatformGenrator.position;
 		PlayerSpownPoint = player.transform.position;
 		CameraSpownPoint = Camera.position;
+		
 		Scoremangment = FindObjectOfType<ScoreManger> ();
 		Interval = 1f;
 		IsPlaying = false;
@@ -52,6 +54,7 @@ public class GameManger : MonoBehaviour {
 
 	public void PlayerDie(){
 		//Instantiate (PlyerDieParticle, player.transform);
+				
 
 		StartCoroutine ("PlayerDieco");
 

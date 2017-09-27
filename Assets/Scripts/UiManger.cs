@@ -7,19 +7,19 @@ using UnityEngine.UI;
 public class UiManger : MonoBehaviour {
 	public GameObject DeathMenu;
 	public GameObject PauseButton;
+	
 	public Text Dm_TimerText;
 	public GameObject  Dm_RestartButton;
 	public int ChosenCharcter;
-	
+	public int SkinIndex;
 	private GameManger gamemangment;
 	private PlayerController Player;
 	private ScoreManger scoremanger;
-	private Dm_timer Dm_timer;
+	
 	private float Coins;
 	void Start(){
 		gamemangment = FindObjectOfType <GameManger> ();
 		scoremanger = FindObjectOfType <ScoreManger> ();
-		Dm_timer = FindObjectOfType<Dm_timer> ();
 		
 	}
 	public void WachVideo(){
@@ -37,7 +37,6 @@ public class UiManger : MonoBehaviour {
 			PauseButton.SetActive (true);
 			Dm_TimerText.gameObject.SetActive (true);
 			Dm_RestartButton.SetActive (false);
-			Dm_timer.Interval = 5f;
 		}
 
 	}

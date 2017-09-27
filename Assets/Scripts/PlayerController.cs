@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour {
 	public float JumpSpeed;
 	public float SpeedMultiPlier;
 	public float SpeedIncreaceMileStone;
+	public  Animator BgColorChanger;
 	private float SpeedMileStoneCount;
 	private Vector3 JumpRotate = Vector3.forward  ;
 	private bool IsGrounded;
@@ -27,7 +28,6 @@ public class PlayerController : MonoBehaviour {
 		MySkin = GetComponent <SpriteRenderer > ();
 		MySkin.sprite = ParamaterPasser.ChosenSkin ;
         gameObject.SetActive (true);
-	    
 	}
 	
 	// Update is called once per frame
@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour {
 			SpeedMileStoneCount += SpeedIncreaceMileStone;
 			SpeedIncreaceMileStone = SpeedIncreaceMileStone * SpeedMultiPlier;
 			MoveSpeed = MoveSpeed * SpeedMultiPlier;
+			ChangeBackgroundColor();
 
 		}
 
@@ -59,4 +60,10 @@ public class PlayerController : MonoBehaviour {
 	
 
 }
+	void ChangeBackgroundColor(){
+ 		int i = Random.Range(0,2);
+		 BgColorChanger.SetInteger ("Index", i);
+		 Debug.Log(i);
+
+	}
 }
