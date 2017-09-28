@@ -10,14 +10,15 @@ public class PlatformGenrator : MonoBehaviour {
 	private int PlatformSelector;
 	private float[] PlatformsWidths;
 	private  int distancebetween;
-	private CoinGenrator CoinGenrator;
+	
 	private int CoinHoldRandomizer;
 	const  int distancebetweenMax = 4;
 	const  int distancebetweenMin = 6;
+	private Transform Coin;
 
 	// Use this for initialization
 	void Start () {
-		CoinGenrator = FindObjectOfType<CoinGenrator > ();
+		
 		PlatformsWidths = new float[objectpools.Length];
 		for ( int i = 0; i < objectpools.Length; i++) {
 
@@ -45,7 +46,11 @@ public class PlatformGenrator : MonoBehaviour {
 
 			if (CoinHoldRandomizer < CoinHold) {
 				
-				CoinGenrator.SpawnCoins (new Vector3 (transform.position.x, transform.position.y + 1f, transform.position.z));
+				for(int i = 0; i< NewPlatform.transform.childCount; i++){
+					Coin = NewPlatform.transform.GetChild(i);
+					Coin.gameObject.SetActive(true);
+				}
+				//CoinGenrator.SpawnCoins (new Vector3 (transform.position.x, transform.position.y + 1f, transform.position.z));
 
 			}
 

@@ -38,7 +38,7 @@ public class BuySkin : MonoBehaviour {
 	
 	public void ShowBuyBtn(int index){
 		BuybtnText.text = "Buy  " + Prisees[index] + "  Coins";
-		gameObject.SetActive(true);
+		//gameObject.SetActive(false);
 		SkinIndex = index;
 	}
 	

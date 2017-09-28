@@ -1605,7 +1605,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 33.5
+  m_fontSize: 34.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1653,11 +1653,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2588,6 +2588,8 @@ MonoBehaviour:
 
     Kenny
 
+    FreePik
+
 
     Music By Ncs :
 
@@ -2603,9 +2605,8 @@ MonoBehaviour:
 
     Electric Joy Ride - Origin'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 710f3acc9427c3343a093a80c05c794f, type: 2}
-  m_sharedMaterial: {fileID: 21365642852400772, guid: 710f3acc9427c3343a093a80c05c794f,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d62a573c923f5cb47b8ff65261033b90, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: d62a573c923f5cb47b8ff65261033b90, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2629,7 +2630,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 12.9
+  m_fontSize: 11.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2669,19 +2670,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1175816500}
-    characterCount: 207
+    characterCount: 215
     spriteCount: 0
-    spaceCount: 36
-    wordCount: 33
+    spaceCount: 37
+    wordCount: 34
     linkCount: 0
-    lineCount: 14
+    lineCount: 15
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:

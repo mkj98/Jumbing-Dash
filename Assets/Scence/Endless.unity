@@ -882,7 +882,7 @@ RectTransform:
   - {fileID: 2118973842}
   - {fileID: 577151134}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1007,7 +1007,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &473403900
 GameObject:
@@ -1707,7 +1707,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!166 &705727314
 AudioChorusFilter:
@@ -1841,50 +1841,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &853701437
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 853701439}
-  - component: {fileID: 853701438}
-  m_Layer: 0
-  m_Name: CoinGenrator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &853701438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 853701437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02b2295d49d2f9b4582dc0f0d2634e88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CoinPool: {fileID: 2040628077}
-  DistanceBetwenCoins: 1
---- !u!4 &853701439
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 853701437}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0734087, y: -0.37413737, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2040628078}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &913960480
 GameObject:
@@ -2034,11 +1991,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8b008c17a65f1f741a68d302b2d2abf3, type: 3}
-  m_Color: {r: 0.13235295, g: 0.13235295, b: 0.13235295, a: 1}
+  m_Sprite: {fileID: 21300000, guid: cf8bdb08c3422784c89b600f39a826ab, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
+  m_DrawMode: 1
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -2058,12 +2015,12 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.03, y: 0.03, z: 0.03, w: 0.03}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
@@ -2289,7 +2246,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1179265694
 GameObject:
@@ -2750,7 +2707,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5c476ce3f929cf5488442b5bae07a1a8,
+      objectReference: {fileID: 21300000, guid: f665dc5443a371c44aff02bf7fb3eb76,
         type: 3}
     - target: {fileID: 212761004428394156, guid: 423d2db752ae3a2499c84355bb5aca74,
         type: 2}
@@ -3621,7 +3578,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1914633900
 MonoBehaviour:
@@ -3652,7 +3609,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2926b880e06660b4c970055018159f43, type: 3}
   - {fileID: 8300000, guid: 9cd763859ac95a240a314b71d00ed0e1, type: 3}
   - {fileID: 8300000, guid: 9d1fb321a3e5fa2449203cb4a02fc0fc, type: 3}
-  - {fileID: 8300000, guid: 71e60ea1f210d014197d621317f173ae, type: 3}
   MusicPlayer: {fileID: 1914633898}
 --- !u!1 &1922853301
 GameObject:
@@ -3935,49 +3891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8fc548e896f124fa7f730e966a736a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2040628076
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2040628078}
-  - component: {fileID: 2040628077}
-  m_Layer: 0
-  m_Name: CoinPool
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2040628077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2040628076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c64805aad63acd544afada967bfaaf3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PooledObject: {fileID: 1657628589200512, guid: 1d84332399e0e4d4e8bf696363331acb,
-    type: 2}
-  PooledAmount: 14
---- !u!4 &2040628078
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2040628076}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 853701439}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2045558217
 GameObject:
   m_ObjectHideFlags: 0
@@ -4014,12 +3927,12 @@ MonoBehaviour:
   MoveSpeed: 8
   JumpSpeed: 12
   SpeedMultiPlier: 1.04
-  SpeedIncreaceMileStone: 100
+  SpeedIncreaceMileStone: 200
   BgColorChanger: {fileID: 1730439969}
   Ground:
     serializedVersion: 2
     m_Bits: 256
-  MySprite: {fileID: 21300000, guid: 20421c3232aa3f642874df79e0a45b2c, type: 3}
+  MySprite: {fileID: 21300000, guid: f665dc5443a371c44aff02bf7fb3eb76, type: 3}
 --- !u!50 &2045558219
 Rigidbody2D:
   serializedVersion: 4
@@ -4100,7 +4013,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5c476ce3f929cf5488442b5bae07a1a8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f665dc5443a371c44aff02bf7fb3eb76, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4122,7 +4035,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2045558223
 MonoBehaviour:

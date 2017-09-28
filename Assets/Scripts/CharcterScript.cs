@@ -33,13 +33,14 @@ public class CharcterScript : MonoBehaviour {
 	public void SelectCharcter(){
 		OwnedSkinIndexs = PlayerPrefsX.GetIntArray("OwnedSkinIndexs",27,1);
 		ChosenCharcter = SkinIndex ;
+		BuyButton.gameObject.SetActive(false);
 		Buy.ShowBuyBtn(ChosenCharcter);
 		for(int i = 0 ; i < OwnedSkinIndexs.Length; i++){
 			
 			if(ChosenCharcter == OwnedSkinIndexs[i]){
 
 				PlayerPrefs.SetInt("ChosenSkin", ChosenCharcter);
-				BuyButton.gameObject.SetActive(false);
+				BuyButton.gameObject.SetActive(true);
 				Debug.Log(ChosenCharcter+ "--" + ChosenCharcter + "--" + OwnedSkinIndexs[i]);
 			}
 				
