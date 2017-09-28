@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlatformDestroyer : MonoBehaviour {
 
 	private GameObject  PlatformDestractionPoint;
+	private Transform Coin;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +18,12 @@ public class PlatformDestroyer : MonoBehaviour {
 
 
 			gameObject.SetActive (false);
-
+			for(int i = 0; i< transform.childCount; i++){
+				if(transform.GetChild(i).name == "Coin"){	
+					Coin = transform.GetChild(i);
+					Coin.gameObject.SetActive(false);
+				}
+			}
 
 
 		}

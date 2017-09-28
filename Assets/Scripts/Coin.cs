@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour {
 	private ScoreManger scoremanger;
-	const int ScoreToGive = 4;
+	const int ScoreToGive = 10;
 	// Use this for initialization
 	void Start () {
 		scoremanger = FindObjectOfType<ScoreManger> ();

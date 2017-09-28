@@ -62,14 +62,14 @@ public class GameManger : MonoBehaviour {
 
 	public IEnumerator PlayerDieco(){
 		Scoremangment.ScoreIncreaseing = false;
+		Music.Pause();
 		PlayerDieSfx.Play ();
 		player.gameObject.SetActive (false);
 		Instantiate (PlyerDieParticle, player.transform.position, Scoremangment.transform.rotation);
 		yield return new WaitForSeconds (1f);
 		DeathMenu.gameObject.SetActive (true);
 		PauseButton.SetActive (false);
-		Music.Pause();
-
+		
 	}
 
 	public void Continu(){
