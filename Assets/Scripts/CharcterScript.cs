@@ -8,7 +8,7 @@ public class CharcterScript : MonoBehaviour {
 	private  Vector3 StartupPosition;
 	public Sprite[] PlayerSkins;
 	public Button BuyButton;
-    private int skinIndex;
+    
     private int ChosenCharcter;
 	private int[] OwnedSkinIndexs;
 	private ParamaterPasser ParamaterPasser;
@@ -34,7 +34,7 @@ public class CharcterScript : MonoBehaviour {
 		OwnedSkinIndexs = PlayerPrefsX.GetIntArray("OwnedSkinIndexs",27,1);
 		ChosenCharcter = SkinIndex ;
 		BuyButton.gameObject.SetActive(false);
-		Buy.ShowBuyBtn(ChosenCharcter);
+		Buy.ShowBuyBtn(ChosenCharcter, this.gameObject);
 		for(int i = 0 ; i < OwnedSkinIndexs.Length; i++){
 			
 			if(ChosenCharcter == OwnedSkinIndexs[i]){

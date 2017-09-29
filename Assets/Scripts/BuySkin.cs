@@ -10,6 +10,7 @@ public class BuySkin : MonoBehaviour {
 	public TextMeshProUGUI BuybtnText;
 	private int[] OwnedSkinIndexs;
 	private List<int> OwnedSkinList;
+	private CharcterScript m_CharcterScript;
 	// Use this for initialization
 	void Start () {
 		
@@ -32,14 +33,15 @@ public class BuySkin : MonoBehaviour {
 			lst.Add(SkinIndex);
 			OwnedSkinIndexs = lst.ToArray();
 			PlayerPrefsX.SetIntArray("OwnedSkinIndexs",OwnedSkinIndexs);
-		
+			m_CharcterScript.SelectCharcter();
 		}
 	}
 	
-	public void ShowBuyBtn(int index){
+	public void ShowBuyBtn(int index, GameObject ClickedButton){
 		BuybtnText.text = "Buy  " + Prisees[index] + "  Coins";
 		//gameObject.SetActive(false);
 		SkinIndex = index;
+		m_CharcterScript = ClickedButton.GetComponent<CharcterScript>();
 	}
 	
 }

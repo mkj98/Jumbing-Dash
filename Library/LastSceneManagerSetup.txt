@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scence/Endless.unity
+- path: Assets/Scence/CharcterCustmizor.unity
   isLoaded: 1
   isActive: 1
