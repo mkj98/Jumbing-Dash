@@ -6,7 +6,7 @@ public class GameManger : MonoBehaviour {
 
 	public Transform PlatformGenrator;
 	public Transform Camera;
-	
+	public Ads Ad;
 	public PlayerController player;
 	public GameObject DeathMenu;
 	public float MoveAhead;
@@ -17,6 +17,7 @@ public class GameManger : MonoBehaviour {
 	public AudioSource PlayerDieSfx;
 	public ParticleSystem  PlyerDieParticle;
 	private float Interval;
+	static int Loses;
 	private Vector3 PlayerSpownPoint;
 	private ScoreManger Scoremangment;
 	private PlatformDestroyer[] platformslist;
@@ -61,6 +62,13 @@ public class GameManger : MonoBehaviour {
 	}
 
 	public IEnumerator PlayerDieco(){
+		if (Loses == 5) {
+			Ad.ShowVideo ();
+			Loses = 0;
+		} else {
+			Loses += 1;
+			Debug.Log (Loses);
+		}
 		Scoremangment.ScoreIncreaseing = false;
 		Music.Pause();
 		PlayerDieSfx.Play ();

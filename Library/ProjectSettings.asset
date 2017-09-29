@@ -651,11 +651,14 @@ PlayerSettings:
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
     Build: 1
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: a5ef3067-90b9-47cf-87e1-0aff76bfb183
-  projectName: Jumping Dash
+  cloudProjectId: 4f97ef5c-0ab6-4a98-aef6-157bd1ec96cb
+  projectName: Jumbing-Dash
   organizationId: mkjdev
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

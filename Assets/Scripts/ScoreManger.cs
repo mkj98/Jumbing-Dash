@@ -11,12 +11,12 @@ public class ScoreManger : MonoBehaviour {
 	public TextMeshProUGUI d_HiScoreText;
 	public TextMeshProUGUI Dm_CoinsText;
 	public Text CoinsText;
-
+	public Button DoublecoinsButton;
 	public float ScoreCounter;
 	public float HighScoreCounter;
 	public float PointPerScound;
 	public float CoinsCounter;
-	public float Dm_CoinsCounter;
+	static float Dm_CoinsCounter;
 	public bool ScoreIncreaseing;
 
 	// Use this for initialization
@@ -60,6 +60,15 @@ public class ScoreManger : MonoBehaviour {
 		CoinsText.text = "" + CoinsCounter ;
 		Dm_CoinsText.text = "" + Dm_CoinsCounter ;
 		PlayerPrefs.SetFloat ("Coins", CoinsCounter);
+
+
+	}
+
+	public void DoubleCoins(){
+		float coins = PlayerPrefs.GetFloat ("Coins") + Dm_CoinsCounter;
+
+		PlayerPrefs.SetFloat ("Coins", coins);
+		DoublecoinsButton.gameObject.SetActive (false);
 
 
 	}
