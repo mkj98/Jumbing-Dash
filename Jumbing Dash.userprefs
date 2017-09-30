@@ -1,17 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\M_loader.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManger.cs">
     <Files>
-      <File FileName="Assets\Scripts\GameManger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameManger.cs" Line="19" Column="19" />
       <File FileName="Assets\Scripts\Coin.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\BackGroundMusic.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlatformGenrator.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="13" Column="4" />
       <File FileName="Assets\Scripts\CharcterScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CameraControler.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Ads.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ScoreManger.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\M_loader.cs" Line="8" Column="36" />
+      <File FileName="Assets\Scripts\M_loader.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UiManger.cs" Line="45" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

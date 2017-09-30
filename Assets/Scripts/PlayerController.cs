@@ -10,14 +10,14 @@ public class PlayerController : MonoBehaviour {
 	public float SpeedIncreaceMileStone;
 	public  Animator BgColorChanger;
 	private float SpeedMileStoneCount;
-	private Vector3 JumpRotate = Vector3.forward  ;
+	//private Vector3 JumpRotate = Vector3.forward  ;
 	private bool IsGrounded;
 	private BoxCollider2D BoxCollider;
 	private float Interval;
 	public LayerMask Ground;
 	private SpriteRenderer MySkin;
 	private ParamaterPasser ParamaterPasser;
-	//public float Tourge;
+	public float Tourge;
 	public Sprite MySprite;
 	// Use this for initialization
 	void Start () {
@@ -51,8 +51,8 @@ public class PlayerController : MonoBehaviour {
 		if ((Input.GetButton("Jump") || Input.GetMouseButton(0)) && IsGrounded) {
 			mybody.velocity = new Vector3 (mybody.velocity.x, JumpSpeed , 0f);
 		}else if (IsGrounded == false) {
-			transform.Rotate (JumpRotate * -140 * Time.deltaTime);
-			//mybody.AddTorque(Tourge);
+			//transform.Rotate (JumpRotate * -140 * Time.deltaTime);
+			mybody.AddTorque(Tourge);
 		}
 
 			mybody.velocity = new Vector3 (MoveSpeed, mybody.velocity.y, 0f);
